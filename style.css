@@ -40,6 +40,15 @@ body {
       margin-bottom: 20px;
       font-weight: bold;
       }
+@media (max-width: 768px) {
+    .about-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .about-text {
+        font-size: 16px;
+    }
+}
 
     /*____________________________________________*/
     /*Header Section*/
@@ -77,11 +86,23 @@ body {
     }
 
     header.scrolled {
-      background-color: rgba(0, 0, 0, 0.8); /* Change this to any color */
+      background-color: rgba(0, 0, 0, 0.8); 
     }
     header.scrolled a {
-      color: #fff; /* Change this to match the new color scheme */
-    } 
+      color: #fff; 
+    }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+    
 /*__________________________________________________________________________*/
 
     /*Hero Section*/
@@ -444,6 +465,11 @@ body {
       margin-top: 10px;
       color: #b3b3b3;
     }
+@media (max-width: 768px) {
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+}
     /*____________________________________________________*/
     /*Recommendation Form Section*/
      /* Recommendation Form */
