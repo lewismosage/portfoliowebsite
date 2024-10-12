@@ -40,6 +40,7 @@ body {
       margin-bottom: 20px;
       font-weight: bold;
       }
+/* Responsive for about section */
 @media (max-width: 768px) {
     .about-container {
         margin: 20px auto;
@@ -91,12 +92,7 @@ body {
     header.scrolled a {
       color: #fff; 
     }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
+
     header nav ul {
         flex-direction: column;
         gap: 10px;
