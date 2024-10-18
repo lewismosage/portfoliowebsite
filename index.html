@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Lewis Mosage</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#" id="contact-btn">Contact</a></li>
+      </ul>  
+    </nav>
+    <div class="github-link"><a href="https://github.com/lewismosage"><img src="portfolio_images/logos/github.logo.png" alt=""></a></div>
+  </header> 
+
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Contact Information</h2>
+      <p><strong>Phone: </strong>+254-748-401-242</p>
+      <p><strong>Email: </strong>maendalewis20@gmail.com</p>
+      <p><strong><a href="https://www.linkedin.com/in/lewismosage">LinkedIn</a></strong></p>
+      <p><strong>Resume</strong>
+      <a href="https://drive.google.com/file/d/1TTWuK-TqE-eUJb3I_ioDrfJ71UnEqMxp/view?usp=sharing" target="_black"()>View Resume</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="hero">
+    <img src="portfolio_images/logos/chill.image.jpeg" alt="Lewis Mosage">
+    <h1>Lewis Mosage</h1>
+    <p><span>Full Stack Software Developer</span></p>
+    <p><small>Welcome to my personal website</small></p>
+  </div>
+<!--_______________________________________________________________________________________________________________________-->
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="portfolio_images/logos/chill.image.jpeg" alt="Profile Photo">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+        <p>
+          Hi, I'm Lewis Mosage, a Full Stack Developer from Nairobi, Kenya, specializing in creating dynamic software solutions using technologies like React, Node.js, and Express.
+        </p>
+        <b></b>
+        <P>
+          With a year of full-stack experience, I focus on developing functional, user-friendly systems that offer seamless and engaging experiences. I enjoy transforming ideas into interactive, intuitive platforms. Whether you need a personal project or a business solution, let's bring your vision to life!
+        </P>
+        <b></b>
+        
+      </div>
+    </div>
+  </section>
+<!--______________________________________________________________________________________________________-->
+ <!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="underline"></div>
+
+  <!-- Tab buttons for Tech Stack and Tools -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('tech-stack')">Tech Stack</button>
+    <button class="tab-button" onclick="showTab('tools')">Tools</button>
+  </div>
+
+  <!-- Tech Stack Content -->
+  <div id="tech-stack" class="tab-content active">
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="portfolio_images/logos/html5.jpeg" alt="HTML">
+        <p>HTML</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/css.jpeg" alt="CSS">
+        <p>CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/JavaScript-logo.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/React.jpeg" alt="React">
+        <p>React</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/express.js.jpeg" alt="Express.js">
+        <p>Express.js</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/node.jpeg" alt="Node.js">
+        <p>Node.js</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/django.jpeg" alt="Django">
+        <p>Django</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/python.logo.jpg" alt="Python">
+        <p>Python</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/MySql.jpeg" alt="MySQL">
+        <p>MySQL</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tools Content -->
+  <div id="tools" class="tab-content">
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="portfolio_images/logos/git.jpeg" alt="Git">
+        <p>Git</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/github.logo.png" alt="GitHub">
+        <p>GitHub</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/visual-studio-code.jpeg" alt="Visual Studio Code" >
+        <p>Visual Studio Code</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="portfolio_images/logos/docker.jpeg" alt="Docker">
+        <p>Docker</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!--___________________________________________________________________________________________________________-->
+<!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Past Project Experience</h2>
+    <div class="underline"></div>
+    <div class="portfolio-grid">
+      <div class="card">
+          <img src="portfolio_images/personalwebsite.png" alt="Personal Website">
+          <div class="card-title">Personal Website</div>
+          <div class="card-description">Designed and developed a sleek, responsive personal portfolio using HTML, CSS, and JavaScript. The site showcases my projects, skills, and recommendations, providing a professional and engaging platform for potential clients and employers to explore my work.</div>
+          <div class="card-technologies">JavaScript, Tailwind</div>
+          <div class="card-links">
+            <a href="https://lewismosage.github.io/portfoliowebsite//" target="_blank">
+              <img src="portfolio_images/logos/external link icon.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="portfolio_images/lmshopping.png" alt="e-commerce">
+          <div class="card-title">E-Commerce Website</div>
+          <div class="card-description">Designed and developed a feature-rich e-commerce platform similar to Amazon, allowing users to search, browse, and purchase products seamlessly.
+            Utilized HTML, CSS, JavaScript, and back-end technologies to create a responsive, user-friendly interface for an efficient online shopping experience.</div>
+          <div class="card-technologies">HTML, CSS, JavaScript</div>
+          <div class="card-links">
+            <a href="https://github.com/your-github-link" target="_blank">
+              <img src="portfolio_images/logos/external link icon.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+            </a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="portfolio_images/lm_project_group.png" alt="Project Management Tool">
+          <div class="card-title">LM Project Group Website</div>
+          <div class="card-description">Developed a professional and responsive website for a project management company. 
+          Leveraged HTML, CSS, and JavaScript to highlight the company’s services, values, and team. 
+          The site delivers a seamless user experience, allowing clients to explore services like project planning, technology solutions, business management, and more.</div>
+          <div class="card-technologies">HTML, CSS, JavaScript</div>
+          <div class="card-links">
+            <a href="https://lewismosage.github.io/lmprojectgroup/" target="_blank">
+              <img src="portfolio_images/logos/external link icon.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="portfolio_images/e-learning platform.jpeg" alt="education platform">
+          <div class="card-title">Digital Classroom Platform</div>
+          <div class="card-description">Developed a dynamic and user-friendly education platform using React and TypeScript, providing students with access to courses, resources, and learning tools. Built an interactive interface with seamless navigation and a responsive design to enhance the online learning experience, ensuring smooth functionality across all devices.</div>
+          <div class="card-technologies">React, TypeScript</div>
+          <div class="card-links">
+            <a href="https://github.com/your-github-link" target="_blank">
+              <img src="portfolio_images/logos/external link icon.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+            </a>
+          </div>
+      </div>
+
+      <div class="card">
+        <img src="portfolio_images/deliveryapp.jpeg" alt="Mobile App">
+        <div class="card-title">Foodplus Food Delivery App</div>
+        <div class="card-description">Developed Foodplus, a feature-rich Food Delivery App using HTML, CSS, and JavaScript. The app enables users to browse restaurants, select menu items, and place orders through a user-friendly interface. Designed with a responsive layout to ensure smooth navigation across all devices, providing an efficient and seamless ordering experience.</div>
+        <div class="card-technologies">HTML, CSS, JavaScript</div>
+        <div class="card-links">
+          <a href="https://lewismosage.github.io/foodplusapp/" target="_blank">
+            <img src="portfolio_images/logos/external link icon.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="portfolio_images/automobile_chatbot.jpeg" alt="chatbot">
+        <div class="card-title">Real-Time Vehicle Support Chatbot</div>
+        <div class="card-description">Developed a secure chatbot using HTML, CSS, and JavaScript to provide real-time support for vehicle inquiries.
+        Integrated real-time data to enhance user engagement and streamline service inquiries, improving overall customer satisfaction. </div>
+        <div class="card-technologies">HTML, CSS, JavaScript</div>
+        <div class="card-links">
+          <a href="https://github.com/your-github-link" target="_blank">
+            <img src="portfolio_images/logos/external link icon.png" alt="GitHub Icon" style="width: 24px; height: 24px;">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!--___________________________________________________________________________________________-->
+<!-- Blog Section -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="underline"></div>
+    <div class="blog-posts">
+      <div class="blog-post">
+        <h3>Embracing the Journey: From Back-End Developer to Full-Stack Enthusiast</h3>
+        <p> As developer, one of the most exciting aspects of my journey is the constant evolution of technology—and myself along with it. With one year of experience as a back-end web developer, I've built a strong foundation in technologies like Node.js and Express. But over time, I realized that to truly bring an idea to life, 
+          I needed to understand the full stack—from the server-side logic to the seamless user interfaces that make applications shine.
+          <br>
+          <br>
+          That’s why I began diving deeper into front-end frameworks like React, and now, I’m well on my way to becoming a full-stack developer. Whether it’s writing efficient back-end code, or crafting a dynamic user experience, I find joy in every line of code.
+          My goal is simple: to continuously improve, explore new technologies, and use my skills to solve real-world problems.
+          Thank you for being part of my journey, and I can’t wait to collaborate on exciting projects!</p>
+        <p> — Lewis Mosage.</p>
+      </div>
+      <div>
+        <div class="blog-post">
+          <h3>The Art of Balancing Design and Functionality in Web Development</h3>
+          <p>As a web developer, one of the biggest challenges I face is balancing beautiful design with powerful functionality. It’s easy to focus on just the code or just the visuals, but creating websites that excel at both is where true mastery lies.
+            When I first started in back-end development, I was all about the data, the servers, and the logic. But as I progressed, I realized that users don’t just interact with code—they interact with experiences. 
+            This led me to explore the world of front-end development, learning how design and user interfaces can make or break an application.
+            A well-designed website should not only look good but also perform seamlessly.
+            <br>
+            <br>
+            The best solutions come from harmonizing these two worlds: ensuring that the site is visually appealing while also being fast, secure, and easy to navigate. 
+            That’s why I love using tools like CSS for design and JavaScript for dynamic functionality—they allow me to create both aesthetic and efficient experiences.
+            At the end of the day, web development is about the user. Balancing design and functionality ensures that users not only enjoy their time on a site but also get the value they came for.</p>
+           <p> — Lewis Mosage.</p>
+      </div>
+  </section>
+<!--___________________________________________________________________________________________-->
+
+  <form id="recommendationForm">
+    <h3>Leave a Recommendation</h3>
+    <input type="text" placeholder="Name (Optional)">
+    <textarea placeholder="Your Recommendation"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 Lewis Mosage. All Rights Reserved.</p>
+  </footer>
+<!--_____________________________________________________________________-->
+<script src="script.js"></script>
+</body>
+</html>
