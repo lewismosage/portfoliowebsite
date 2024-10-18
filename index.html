@@ -44,7 +44,7 @@
   <section id="about">
     <div class="about-container">
       <div class="about-image">
-        <img src="portfolio_images/logos/chill.image.jpeg" alt="Profile Photo">
+        <img id="about-image" src="portfolio_images/logos/chill.image.jpeg" alt="Profile Photo">
       </div>
       <div class="about-content">
         <h2>About Me</h2>
@@ -281,5 +281,23 @@
   </footer>
 <!--_____________________________________________________________________-->
 <script src="script.js"></script>
+<script>
+  function toggleAboutImage() {
+  const aboutImage = document.getElementById('about-image');
+  
+  if (window.innerWidth <= 600) {
+    aboutImage.style.display = 'none';
+  } else {
+    aboutImage.style.display = 'block';
+  }
+}
+
+// Run the function when the page loads
+window.onload = toggleAboutImage;
+
+// Run the function whenever the window is resized
+window.onresize = toggleAboutImage;
+
+</script>
 </body>
 </html>
